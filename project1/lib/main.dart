@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.deepPurple),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('EasyList'),
+          title: Text('List1'),
         ),
-        body: ProductManager(startingProduct: 'Food Tester'),
+        body: ProductManager(startingProduct: 'Food Testing'),
       ),
     );
   }
