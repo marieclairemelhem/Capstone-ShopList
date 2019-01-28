@@ -1,22 +1,27 @@
 import 'package:flutter/material.dart';
-import './product_manager.dart';
+import 'splashscreen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'login.dart';
+import 'homescreen.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(new MaterialApp(
+    home: _handleCurrentScreen(),
+    title: 'ShopList',
+  ));
+}
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-          brightness: Brightness.light,
-          primarySwatch: Colors.deepOrange,
-          accentColor: Colors.deepPurple),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('List1'),
-        ),
-        body: ProductManager(startingProduct: 'Food Testing'),
-      ),
-    );
-  }
+Widget _handleCurrentScreen() {
+  return new StreamBuilder<FirebaseUser>(
+      stream: FirebaseAuth.instance.onAuthStateChanged,
+      builder: (BuildContext context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return new SplashScreen();
+        } else {
+          if (snapshot.hasData) {
+            return new HomeScreen(snapshot.data.uid);
+          }
+        }
+        return new LoginScreen();
+      });
 }

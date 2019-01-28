@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "689056035423",
+    "firebase_url": "https://shoplist-fdfbc.firebaseio.com",
+    "project_id": "shoplist-fdfbc",
+    "storage_bucket": "shoplist-fdfbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689056035423:android:9a4a7771cb810e8c",
+        "android_client_info": {
+          "package_name": "com.example.testproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689056035423-56ld5gc20c20i623j8h9qvj621labk4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtfnWuNGyUtv5Uk5HGpP7xdcc4gLxcrQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
