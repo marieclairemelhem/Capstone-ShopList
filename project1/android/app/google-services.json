@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "689056035423",
-    "firebase_url": "https://shoplist-fdfbc.firebaseio.com",
-    "project_id": "shoplist-fdfbc",
-    "storage_bucket": "shoplist-fdfbc.appspot.com"
+    "project_number": "152862623867",
+    "firebase_url": "https://shoplist-e9bc9.firebaseio.com",
+    "project_id": "shoplist-e9bc9",
+    "storage_bucket": "shoplist-e9bc9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:689056035423:android:9a4a7771cb810e8c",
+        "mobilesdk_app_id": "1:152862623867:android:9a4a7771cb810e8c",
         "android_client_info": {
           "package_name": "com.example.testproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "689056035423-56ld5gc20c20i623j8h9qvj621labk4e.apps.googleusercontent.com",
+          "client_id": "152862623867-07llneq8lcfs03todsn6i835ic0aqbmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testproject",
+            "certificate_hash": "2635ab01b180f6d05719b2b7bae024f29e788a0b"
+          }
+        },
+        {
+          "client_id": "152862623867-03csm61n9ivjgfqhf2mekn6v4vovng3j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtfnWuNGyUtv5Uk5HGpP7xdcc4gLxcrQA"
+          "current_key": "AIzaSyDKlTH9QXz10qiLU9ohM9R42lEdKF4k28M"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152862623867-03csm61n9ivjgfqhf2mekn6v4vovng3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
